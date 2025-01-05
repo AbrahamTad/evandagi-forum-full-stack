@@ -13,8 +13,7 @@ app.use(
 );
 
 // Serve static files from React app (Vite or create-react-app)
-app.use(express.static(path.join(__dirname, "dist"))); // Update to "dist" if using Vite
-// app.use(express.static("build"));
+app.use(express.static(path.join(__dirname, "build"))); // Update to "dist" if using Vite
 
 // Middleware for JSON parsing
 app.use(express.json());
